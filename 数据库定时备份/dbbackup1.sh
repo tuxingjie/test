@@ -1,0 +1,1 @@
+/usr/local/mysql/bin/mysqldump -ufoo -pfoo --all-databases > /usr/local/backup/`date +%Y%m%d_%H`.sql

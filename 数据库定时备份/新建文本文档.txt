@@ -1,0 +1,5 @@
+
+/usr/local/mysql/bin/mysqldump -ufoo -pfoo --all-databases > /usr/local/backup/`date +%Y%m%d_%H`.sql
+
+find /data/dbdata/mysqlbak/ -mtime +3 -name '*[1-9].sql' -exec rm -rf {} \;
+
